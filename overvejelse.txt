@@ -1,0 +1,6 @@
+Meget hurtigere end at kode manuelt.
+
+Frontend og backend er hvert sit projekt. Det gav problemer med at få dem til at arbejde sammen,
+ men det lykkedes til sidst.
+
+Jeg har svært ved at se nogen ulemper, udover at det er svært gennemskue det generede kode.
