@@ -39,18 +39,15 @@ export default function Header(){
       <nav className="site-nav" aria-label="Main navigation">
         <div className="container nav-inner">
           <ul className="nav-left">
-            <li>Website</li>
-            <li>Ziyarat</li>
-            <li>Store</li>
-            <li>Marriage Beuro</li>
-            <li>Qura’an</li>
-            <li>Dua</li>
-            <li>Amal</li>
-            <li>Taqeebat</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/shop">Shop</Link></li>
+            <li><Link to="/favorites">Favorites{count ? ` (${count})` : ''}</Link></li>
+            <li><Link to="/my-orders">My Orders</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
           </ul>
           <ul className="nav-right">
             <li><Link to="/shop" state={{ focusSearch: true }}><span className="nav-icon" aria-hidden="true">🔍</span>Search</Link></li>
-            <li><Link to="/favorites"><span className="nav-icon" aria-hidden="true">♥</span>Favorites{count ? ` (${count})` : ''}</Link></li>
+            <li><Link to="/favorites"><span className="nav-icon" aria-hidden="true">♥</span>Favorites</Link></li>
             <li>
               {isAuthed ? (
                 <button className="nav-action-btn" type="button" onClick={logout}>Logout</button>
